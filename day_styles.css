@@ -1,0 +1,159 @@
+/* Custom CSS for Task Management */
+/* Custom CSS for Task Management */
+body {
+    background-color: #f2f4f8 !important; /* Light blue-gray background */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.btn-group .btn {
+    margin-right: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888; /* Color for completed tasks */
+}
+
+.list-group-item {
+    border: 1px solid #d1d8e0; /* Light gray border */
+    padding: 15px;
+    background-color: #fff; /* White background for task items */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light gray hover background */
+}
+
+.btn-danger {
+    background-color: #ea4f59 !important; /* Light red delete button */
+    border-color: #ea4f59 !important;
+    border-radius: 3px !important; /* Rounded corners */
+    margin-left: 20px;
+}
+
+.btn-danger:hover {
+    background-color: #c7434a !important; /* Darker red on hover */
+    border-color: #c7434a !important;
+}
+
+.btn-success {
+    background-color: #6abb72 !important; /* Light green completed button */
+    border-color: #6abb72 !important;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-success:hover {
+    background-color: #509d4d !important; /* Darker green on hover */
+    border-color: #509d4d !important;
+}
+
+.btn-info {
+    background-color: #5aadd1 !important; /* Light blue edit button */
+    border-color: #5aadd1 !important;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-info:hover {
+    background-color: #438cbb !important; /* Darker blue on hover */
+    border-color: #438cbb !important;
+}
+
+/* Optional: Style for the task input form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px !important; /* Rounded input fields */
+}
+
+.btn-primary {
+    background-color: #4aa1ff !important; /* Light blue add task button */
+    border-color: #4aa1ff !important;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-primary:hover {
+    background-color: #3388ff !important; /* Darker blue on hover */
+    border-color: #3388ff !important;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    margin-left: -700px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f4f8;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 4px;
+    bottom: 4px;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #f2f4f8;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    background-image: url('SUN.png'); /* Change to daymode.png when checked */
+  }
+  
+  .slider:before {
+    background-image: url('MOON.png'); /* Initial image */
+    background-position: 2px 1px; /* Adjust the first value (horizontal position) to move the image to the right */
+}
+
+
+.completed {
+    text-decoration: line-through;
+}
+
+
+/* Added custom CSS to position the toggle switch */
+.toggle-switch {
+    position: fixed;
+    top: 42px;
+    right: 85px;
+    z-index: 9999;
+}
+.slider {
+    background-color: #f2f4f8; /* Background color when switch is off */
+    border: 2px solid black;
+}
+.slider:before {
+    background-color: #f2f4f8; /* Slider color when switch is off */
+}
+input:checked + .slider {
+    background-color: #f2f4f8; /* Background color when switch is on */
+}
+input:checked + .slider:before {
+    background-color: #f2f4f8; /* Slider color when switch is on */
+}
